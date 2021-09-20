@@ -2,35 +2,47 @@ const API_KEY = process.env.API_KEY;
 
 export default {
     fetchTrending: {
-        title: 'Trending',
+        title:"Trending",
         url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
+    },
+    fetchTopRated:{
+        title:"Top Rated",
+        url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`
     },
     fetchActionMovie:{
         title:"Action",
-        url: `/trending/all/week?api_key=${API_KEY}&with_genre=28`
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=28`
     },
     fetchComedyMovie:{
         title:"Comedy",
-        url: `/trending/all/week?api_key=${API_KEY}&with_genre=35`
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=35`
     },
     fetchHorrorMovie:{
         title:"Horror",
-        url: `/trending/all/week?api_key=${API_KEY}&with_genre=27`
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=27`
     },
     fetchRomanceMovie:{
         title:"Romance",
-        url: `/trending/all/week?api_key=${API_KEY}&with_genre=10749`
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=10749`
     },
     fetchMystery:{
         title:"Mystery",
-        url: `/trending/all/week?api_key=${API_KEY}&with_genre=9648`
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=9648`
     },
     fetchSciFi:{
         title:"Sci-Fi",
-        url: `/trending/all/week?api_key=${API_KEY}&with_genre=878`
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=878`
     },
     fetchWestern:{
         title:"Western",
-        url: `/trending/all/week?api_key=${API_KEY}&with_genre=37`
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=37`
     },
+    fetchAnimation:{
+        title: "Animation",
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=16`
+    },
+    fetchTV:{
+        title: "TV Show",
+        url: `/discover/movie?api_key=${API_KEY}&with_genres=10770`
+    }
 }
