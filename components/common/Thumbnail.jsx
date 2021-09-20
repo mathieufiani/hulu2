@@ -6,7 +6,7 @@ import {forwardRef} from "react";
 const Thumbnail = forwardRef(({result}, ref) => {
     const BASE_URL = "https://image.tmdb.org/t/p/original"
     return (
-        <div ref={ref} className={'p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50'}>
+        <div ref={ref} className={'p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 m-5'}>
             <Image layout={'responsive'}
                    src={
                        `${BASE_URL}${result.backdrop_path || result.poster_path}`
